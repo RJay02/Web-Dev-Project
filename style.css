@@ -11,12 +11,12 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: none;
+    background-image: url(Images/Code.jpg);
     background-size: cover;
     background-position: center;
 }
 .container{
-    padding: 10px 10;
+    padding: 10px 10%;
 
 }
 
