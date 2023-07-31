@@ -32,15 +32,14 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2 rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
-.logo{ 
+.logo{
+    width: 140px;
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
@@ -53,11 +52,23 @@ body{
     margin-left: 4 rem;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    font-size: 1.7rem;
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 nav ul li a{
