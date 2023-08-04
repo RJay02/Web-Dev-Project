@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>RJ Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c3585a39c9.js" crossorigin="anonymous"></script>
     </head>
 
     
@@ -36,13 +37,89 @@
                     </div>
 
                     </div>
-<!-- Home page design  -->
 
+        </div>
 
 
 
 <!-- About section  -->
 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/GodDID.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle"> About Me </h1>
+                <p> Welcome to my portfolio! I am a computing student from Bath Spa university on a mission to conquer the tech world.
+                    With a passion for problem-solving and creativity, I have been learning how to code and develop various projects.
+                    From software development to data analysis, I love it all. I believe technology can be a force for good, and I am determined
+                    to create solutions that improve lives. Collaboration is essential to innovation, and I thrive in team settings. Learning from 
+                    my peers and mentors is a priority, as the tech world is always evolving. 
+                    Thank you for being here, and I am excited to show you my journey and showcase my skills through this portfolio. </p>
+                <div class="tabtitles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python,CSS,JavaScript,HTML</li>
+                        <li><span>Problem Solving</span><br> Using different logics and algorithms</li>
+                        <li><span>Web Developement</span><br>Learning to use web technologies like HTML,CSS and JavaScript</li>
+                        <li><span>User Interface Design</span><br>Familiar with designing user-friendly interfaces and user experience</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2022</span><br>GCSEs</li>
+                        <li><span>2020-2022</span><br>A-level</li>
+                        <li><span>2023-Current</span><br>BA in computing</li>
+                    </ul>
+                </div>      
+            </div>
+        </div>
+    </div>
 </div>
 
+<!-- Contact page  -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+</body>
 </html>
