@@ -25,11 +25,6 @@ body{
 }
 
 
-/* section { 
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-} */
-
 #header{
     width: 100%;
     height: 100vh;
@@ -38,22 +33,6 @@ body{
     background-position: center;
 }
 
-
-
-
-/* .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    background-image: url(Images/LaptopBackground.png);
-} */
 
 .navbar{
     padding: 10px 10%;
@@ -100,17 +79,14 @@ ul li a:hover::after{
 }
 
 
-.header-text{
+.header-text p{
     margin-top: 20%;
-    margin-left: 10px;
-    font-size: 30px;
+    margin-left: 15px;
+    font-size: 40px;
     display: flexbox;
 }
 
-/* .header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-} */
+
 
 /* Home section  */
 
@@ -132,6 +108,8 @@ ul li a:hover::after{
 
 .header-text .static-txt{
     color: #fff;
+    margin-left: 15px;
+    position: relative;
     font-size: 60px;
     font-weight: 400;
 }
