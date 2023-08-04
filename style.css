@@ -91,19 +91,22 @@ ul li a:hover::after{
 /* Home section  */
 
 
-/* .btn{ 
+.btn{ 
     display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--bg-color);
+    padding: 1rem 3rem;
+    background: #ff004f;
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    box-shadow: 0 0 1rem var(--second-bg-color);
     font-size: 1.6rem;
-    color: var(--second-bg-color);
+    color: var(--text-color);
     letter-spacing: .1rem;
     font-weight: 600;
-} */
+    transition: 0.5s ease;
+}
 
-
+.btn:hover{
+    box-shadow: none;
+}
 
 
 .header-text .static-txt{
