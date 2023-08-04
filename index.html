@@ -13,8 +13,10 @@
     <body>
 
         <div id="header">
+            <div id="home">
+            <header class="header">
             <header class="navbar">
-                    <nav>
+                    <nav class = bar2>
                         <img src = "Images/Logo.png" class = "logo">
                         <ul>
                         <li> <a href="#home">Home</a> </li>
@@ -37,7 +39,7 @@
                     </div>
 
                     </div>
-
+            </div>
         </div>
 
 
@@ -92,7 +94,7 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email " required>
                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="Submit" class="btn btn2">Submit</button>
+                    <button type="Submit" class="button">Submit</button>
                 </form>
             </div>
             <div class="contact-left">
@@ -106,6 +108,9 @@
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © RJ Badoni</p>
         </div>
     </div>
 </div>
@@ -126,6 +131,15 @@
     }
 
 </script>
+
+<section class = "banner"></section>
+<script type="text/JavaScript">
+    window.addEventListener("scroll",function()){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+    }
+</script>
+
 
 
 </body>
