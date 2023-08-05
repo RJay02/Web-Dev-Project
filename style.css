@@ -28,7 +28,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/LaptopBackground.png);
+    background-image: url(Images/Background.png);
     background-size: cover;
     background-position: center;
 }
