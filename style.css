@@ -49,8 +49,6 @@ body{
 }
 
 
-
-
 .navbar{
     padding: 5px 5%;
 }
@@ -197,17 +195,17 @@ ul li a:hover::after{
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about1{
     flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about img{
     width: 100%;
     border-radius: 15px;
 
 }
 
-.about-col-2{
+.about2{
     flex-basis: 60%;
 }
 
