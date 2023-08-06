@@ -1,3 +1,4 @@
+<!-- Starting HTML code  -->
 <!DOCTYPE html>
 <html> 
     <head> 
@@ -9,7 +10,7 @@
         <script src="https://kit.fontawesome.com/c3585a39c9.js" crossorigin="anonymous"></script>
     </head>
 
-    
+    <!-- Main home page section -->
     <body>
 
         <div id="header">
@@ -25,7 +26,7 @@
                         </ul>
                     </nav>
                     <div class="header-text">
-                        <p>Hello, I am Rupanjay Badoni </p>
+                        <p>Hi, I am Rupanjay Badoni </p>
                         <div class="static-txt"> And I am a</div>
                         <ul class = "dynamic-txts"> 
                             <li> <span> Student </span> </li>
@@ -74,9 +75,9 @@
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2018-2022</span><br>GCSEs</li>
+                        <li><span>2018-2020</span><br>GCSEs</li>
                         <li><span>2020-2022</span><br>A-level</li>
-                        <li><span>2023-Current</span><br>BA in computing</li>
+                        <li><span>2022-Present</span><br>BA in Computing</li>
                     </ul>
                 </div>      
             </div>
@@ -84,22 +85,22 @@
     </div>
 </div>
 
-<!-- Contact page  -->
+<!-- Contact page section  -->
 
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-right">
-                <form> 
+                <form action="https://formsubmit.co/5291a3d76adc08f4e35a520fdfc72364" method="POST"> 
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email " required>
                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="Submit" class="button">Submit</button>
+                    <button type="submit" class="button">Submit</button>
                 </form>
             </div>
             <div class="contact-left">
                 <h1 class="subtitle">Contact Me</h1>
-                <p>contact@example.com</p>
+                <p>rupanjaybadoni@gmail.com</p>
                 <p>0123456789</p>
                 <div class="social-icons">
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -132,13 +133,35 @@
 
 </script>
 
-<section class = "banner"></section>
+<!-- <section class = "banner"></section>
 <script type="text/JavaScript">
     window.addEventListener("scroll",function()){
         var header = document.querySelector("header");
         header.classList.toggle("sticky",window.scrollY > 0);
     }
+</script> -->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script> 
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "kiethchilton@gmail.com",
+            Password : "Rupanjay@123",
+            To : 'rupanjaybadoni@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "Name" + document.getElementById("text").value
+                + "<br> Email:"  + document.getElementByID("email").value
+                + "<br> Message:"  + document.getElementByID("message").value
+        }).then(
+        message => alert("Message Sent Succesfully")
+        );
+    }
 </script>
+
+
+
 
 
 
